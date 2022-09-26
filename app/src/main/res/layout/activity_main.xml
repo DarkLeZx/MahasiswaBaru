@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulir Pendaftaran Mahasiswa Baru Universitas Multi Data Palembang"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#0027FF"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/et_nomor_pendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran : "
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/et_nama_calon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Calon Mahasiswa Baru :"
+        android:inputType="text"/>
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Alamat Mahasiswa :"-->
+<!--        android:inputType="text" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_jurusan"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Jurusan Yang Dituju :"-->
+<!--        android:inputType="text"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin :"
+        android:textSize="17sp"
+        android:layout_marginTop="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_jenis_kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_laki_laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"
+            android:checked="true"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Perempuan"/>
+
+    </RadioGroup>
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_nomorhp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="No. Hp :"-->
+<!--        android:inputType="number"/>-->
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+</LinearLayout>
